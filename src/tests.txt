@@ -1,0 +1,5 @@
+1. **test("create expense")**: Verifies that a new expense is added successfully, updating the expense list, remaining balance, and spent total accordingly.
+
+2. **test("delete expense")**: Confirms that an expense can be deleted, updating the remaining balance and spent total accurately.
+
+3. **test("balance verification")**: Ensures that the application correctly resets the remaining balance and spent total after deleting an expense, and verifies that a new expense can be added again after deletion.
