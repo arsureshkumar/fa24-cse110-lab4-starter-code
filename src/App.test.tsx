@@ -65,7 +65,7 @@ test("delete expense", () => {
   fireEvent.click(deleteButton);
 
   expect(expenseName).not.toBeInTheDocument();
-  expect(screen.getByText("Remaining: $1000")).not.toBeInTheDocument();
+  expect(screen.getByText("Remaining: $1000")).toBeInTheDocument();
   expect(screen.getByText("Spent so far: $0")).toBeInTheDocument();
 
   fireEvent.change(createName, { target: { value: "New Expense" } });
